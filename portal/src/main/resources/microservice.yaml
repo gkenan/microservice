@@ -1,0 +1,17 @@
+APPLICATION_ID: start.servicecomb.io
+service_description:
+  name: PortalService
+  version: 0.0.1
+  environment: development
+servicecomb:
+  handler:
+    chain:
+      Provider: {}
+  highway:
+    address: 192.168.99.1:9090
+  rest:
+    address: 192.168.99.1:9080
+  service:
+    registry:
+      address: http://127.0.0.1:30100
+      autodiscovery: false

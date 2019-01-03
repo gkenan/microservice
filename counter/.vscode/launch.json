@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CounterApplication",
+            "request": "launch",
+            "mainClass": "com.huawei.counter.CounterApplication",
+            "projectName": "counter"
+        }
+    ]
+}

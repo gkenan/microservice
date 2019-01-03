@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PortalApplication",
+            "request": "launch",
+            "mainClass": "com.huawei.portal.PortalApplication",
+            "projectName": "portal"
+        }
+    ]
+}

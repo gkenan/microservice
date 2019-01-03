@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>微服务测试</title>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous" />
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+
+</head>
+
+<body>
+    <div class="container" style="margin-top: 100px">
+        <div class="panel panel-default">
+            <div class="panel-heading">微服务调用测试</div>
+            <div class="panel-body">
+                <label for="ishigh">highway：</label><input type="checkbox" name="ishigh" id="ishigh" />
+                <div>
+                    <input name="delay" type="text" placeholder="调用延迟" disabled="disabled" />ms
+                </div>
+            </div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>限流测试</td>
+                        <td><input id="frequency" type="number" min="1" max="20" placeholder="qps" /></td>
+                        <td><button type="button" id="frebtn">提交</button></td>
+                    </tr>
+                    <tr>
+                        <td>熔断测试</td>
+                        <td><button type="button" id="normalbtn">正常请求</button></td>
+                        <td><button type="button" id="errorbtn">触发异常</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div><input id="result" type="text" placeholder="调用结果" disabled="disabled" />
+            <button type="button" id="resetbtn">计数器清零</button>
+        </div>
+    </div>
+</body>
+
+</html>
